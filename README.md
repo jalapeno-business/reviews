@@ -1,13 +1,13 @@
-# Project Name
+# Jalapeño Business
 
-> Project description
+> Replica of Zagat
 
 ## Related Projects
 
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
+- https://github.com/jalapeno-business/navbar
+- https://github.com/jalapeno-business/carousel
+- https://github.com/jalapeno-business/rec-public.git
+- https://github.com/jalapeno-business/restaurant-info
 
 ## Table of Contents
 
@@ -36,4 +36,3 @@ From within the root directory:
 npm install -g webpack
 npm install
 ```
-
