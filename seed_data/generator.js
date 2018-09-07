@@ -115,7 +115,7 @@ const createRestaurant = function(id) {
 };
 
 let count = 1;
-const maxCount = 5;
+const maxCount = 100;
 const restaurants = [];
 while (count <= maxCount) {
   const restaurant = createRestaurant(count);
@@ -123,7 +123,6 @@ while (count <= maxCount) {
   count += 1;
 }
 
+console.log(restaurants.length, 'restaurants created');
 const json = JSON.stringify(restaurants, null, 2);
-fs.writeFile(path.join(__dirname, 'seed_data', 'zaget-data.json'), json, 'utf8', () =>
-  console.log('Data generation done'),
-);
+fs.writeFileSync(path.join(__dirname, 'zaget-data.json'), json, 'utf8', () => console.log('Data generation done'));
