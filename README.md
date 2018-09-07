@@ -4,7 +4,7 @@
 
 ## Related Projects
 
-- https://github.com/jalapeno-business/navbar
+- https://github.com/jalapeno-business/reviews
 - https://github.com/jalapeno-business/carousel
 - https://github.com/jalapeno-business/rec-public.git
 - https://github.com/jalapeno-business/restaurant-info
