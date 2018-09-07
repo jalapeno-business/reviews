@@ -1,0 +1,684 @@
+[
+  {
+    "id": 1,
+    "businessInfo": {
+      "name": "Senger - Erdman",
+      "location": {
+        "address": "14035 Oral Village",
+        "neighborhood": "Embarcadero"
+      },
+      "phone": "027-690-7348 x171",
+      "times": {
+        "Sunday": [
+          "10:00am",
+          "7:00pm"
+        ],
+        "Monday": [
+          "8:00am",
+          "11:00pm"
+        ],
+        "Tuesday": [
+          "8:00am",
+          "11:00pm"
+        ],
+        "Wednesday": [
+          "8:00am",
+          "11:00pm"
+        ],
+        "Thursday": [
+          "8:00am",
+          "11:00pm"
+        ],
+        "Friday": [
+          "8:00am",
+          "11:00pm"
+        ],
+        "Saturday": [
+          "8:00am",
+          "5:00pm"
+        ]
+      },
+      "email": "Senger-Erdman_Considine@yahoo.com",
+      "website": "www.Senger- Erdman.com",
+      "social": {
+        "facebook": true,
+        "instagram": false,
+        "linkedin": true
+      },
+      "tag": "Realigned zero tolerance time-frame"
+    },
+    "details": {
+      "dollarSigns": 3,
+      "cuisine": "American",
+      "opentable": true,
+      "insideTips": "Qui ipsam unde nam fugit consequuntur aut nihil.",
+      "knownFor": [
+        "Breakfast",
+        "Bar",
+        "Outdoor",
+        "Dinner"
+      ]
+    },
+    "zagatReview": {
+      "description": "Veniam inventore est delectus.",
+      "review": 5
+    },
+    "publications": [
+      {
+        "img": "http://lorempixel.com/640/480/food",
+        "title": "Incredible Cotton Hat",
+        "url": "https://jessica.com",
+        "date": "2015-12-04T02:12:29.377Z"
+      },
+      {
+        "img": "http://lorempixel.com/640/480/food",
+        "title": "Handmade Steel Bike",
+        "url": "http://seth.name",
+        "date": "2012-07-09T12:23:23.032Z"
+      },
+      {
+        "img": "http://lorempixel.com/640/480/food",
+        "title": "Awesome Frozen Bike",
+        "url": "http://matt.org",
+        "date": "2013-09-11T08:09:26.806Z"
+      },
+      {
+        "img": "http://lorempixel.com/640/480/food",
+        "title": "Sleek Fresh Chair",
+        "url": "http://lysanne.biz",
+        "date": "2013-02-22T23:12:04.488Z"
+      },
+      {
+        "img": "http://lorempixel.com/640/480/food",
+        "title": "Handcrafted Concrete Gloves",
+        "url": "http://elvera.name",
+        "date": "2012-02-12T11:13:56.972Z"
+      },
+      {
+        "img": "http://lorempixel.com/640/480/food",
+        "title": "Practical Wooden Computer",
+        "url": "https://tom.biz",
+        "date": "2012-07-30T13:17:24.976Z"
+      }
+    ],
+    "photos": [],
+    "whatToOrder": [
+      {
+        "title": "Practical Plastic Gloves",
+        "img": "http://lorempixel.com/640/480/food"
+      },
+      {
+        "title": "Incredible Frozen Keyboard",
+        "img": "http://lorempixel.com/640/480/food"
+      },
+      {
+        "title": "Ergonomic Granite Car",
+        "img": "http://lorempixel.com/640/480/food"
+      }
+    ],
+    "reviews": [
+      {
+        "name": "Mireya Bruen",
+        "date": "2014-03-07T18:02:04.716Z",
+        "text": "Quibusdam architecto molestias dolores itaque. Et maxime doloribus suscipit. Sunt consequatur voluptatem voluptatem. Eaque eaque et quae sed occaecati. Dolor aliquam inventore quia.",
+        "profilePic": "http://lorempixel.com/640/480/people",
+        "star": true,
+        "numOfStars": 1
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "businessInfo": {
+      "name": "Kub - Langworth",
+      "location": {
+        "address": "8973 Hoppe Islands",
+        "neighborhood": "Hayes"
+      },
+      "phone": "1-999-927-9900",
+      "times": {
+        "Sunday": [
+          "11:00am",
+          "6:00pm"
+        ],
+        "Monday": [
+          "8:00am",
+          "8:00pm"
+        ],
+        "Tuesday": [
+          "8:00am",
+          "8:00pm"
+        ],
+        "Wednesday": [
+          "8:00am",
+          "8:00pm"
+        ],
+        "Thursday": [
+          "8:00am",
+          "8:00pm"
+        ],
+        "Friday": [
+          "8:00am",
+          "8:00pm"
+        ],
+        "Saturday": [
+          "9:00am",
+          "5:00pm"
+        ]
+      },
+      "email": "Kub-Langworth.Gleason@hotmail.com",
+      "website": "www.Kub- Langworth.com",
+      "social": {
+        "facebook": false,
+        "instagram": false,
+        "linkedin": true
+      },
+      "tag": "Seamless impactful secured line"
+    },
+    "details": {
+      "dollarSigns": 2,
+      "cuisine": "American",
+      "opentable": false,
+      "insideTips": "Aliquam nemo in.",
+      "knownFor": [
+        "Outdoor",
+        "Breakfast",
+        "Dinner",
+        "Lunch"
+      ]
+    },
+    "zagatReview": {
+      "description": "Dolorum eos sit qui excepturi.",
+      "review": 3
+    },
+    "publications": [
+      {
+        "img": "http://lorempixel.com/640/480/food",
+        "title": "Incredible Soft Chair",
+        "url": "https://jerry.com",
+        "date": "2012-12-28T09:09:03.344Z"
+      },
+      {
+        "img": "http://lorempixel.com/640/480/food",
+        "title": "Refined Soft Cheese",
+        "url": "http://katherine.net",
+        "date": "2012-06-21T04:02:44.542Z"
+      },
+      {
+        "img": "http://lorempixel.com/640/480/food",
+        "title": "Small Steel Chicken",
+        "url": "https://mac.com",
+        "date": "2013-05-06T13:40:32.890Z"
+      },
+      {
+        "img": "http://lorempixel.com/640/480/food",
+        "title": "Practical Plastic Ball",
+        "url": "https://herbert.net",
+        "date": "2014-09-05T00:36:42.746Z"
+      },
+      {
+        "img": "http://lorempixel.com/640/480/food",
+        "title": "Refined Rubber Chicken",
+        "url": "http://stephanie.net",
+        "date": "2015-02-22T10:50:10.297Z"
+      },
+      {
+        "img": "http://lorempixel.com/640/480/food",
+        "title": "Unbranded Plastic Computer",
+        "url": "http://hunter.info",
+        "date": "2013-10-11T15:07:35.536Z"
+      }
+    ],
+    "photos": [],
+    "whatToOrder": [
+      {
+        "title": "Practical Granite Ball",
+        "img": "http://lorempixel.com/640/480/food"
+      },
+      {
+        "title": "Rustic Granite Tuna",
+        "img": "http://lorempixel.com/640/480/food"
+      }
+    ],
+    "reviews": [
+      {
+        "name": "Kamille Kub",
+        "date": "2015-04-21T05:09:58.677Z",
+        "text": "Nesciunt eum quo. Et nisi officiis recusandae sit dicta inventore voluptatem. Enim unde assumenda quia dolores non amet nisi. Nesciunt veniam eum asperiores aut eum sed. Quo et odio enim. Qui et voluptatem maiores.",
+        "profilePic": "http://lorempixel.com/640/480/people",
+        "star": false,
+        "numOfStars": 1
+      },
+      {
+        "name": "Angelita Gottlieb",
+        "date": "2012-07-03T13:07:27.716Z",
+        "text": "Beatae possimus cumque ipsum earum est fuga hic cupiditate consequatur. Temporibus placeat aut ea magni culpa repellendus nobis omnis. Distinctio eos tempore. Aut accusantium officia consequatur non. Neque exercitationem odit quaerat provident. Reiciendis et praesentium.",
+        "profilePic": "http://lorempixel.com/640/480/people",
+        "star": false,
+        "numOfStars": 2
+      },
+      {
+        "name": "Ahmad Wehner",
+        "date": "2012-06-17T21:16:12.961Z",
+        "text": "Iure vel nihil quia nulla sint tempore molestiae. Ea quisquam eum quasi tempora inventore non maxime. Tempora doloribus nihil quibusdam. Commodi sint alias et nam fugit voluptates fugiat aspernatur.",
+        "profilePic": "http://lorempixel.com/640/480/people",
+        "star": true,
+        "numOfStars": 1
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "businessInfo": {
+      "name": "Sanford Group",
+      "location": {
+        "address": "57860 Frederique Ferry",
+        "neighborhood": "SOMA"
+      },
+      "phone": "602.046.1709",
+      "times": {
+        "Sunday": [
+          "11:00am",
+          "7:00pm"
+        ],
+        "Monday": [
+          "8:00am",
+          "7:00pm"
+        ],
+        "Tuesday": [
+          "8:00am",
+          "7:00pm"
+        ],
+        "Wednesday": [
+          "8:00am",
+          "7:00pm"
+        ],
+        "Thursday": [
+          "8:00am",
+          "7:00pm"
+        ],
+        "Friday": [
+          "8:00am",
+          "7:00pm"
+        ],
+        "Saturday": [
+          "9:00am",
+          "7:00pm"
+        ]
+      },
+      "email": "SanfordGroup27@gmail.com",
+      "website": "www.SanfordGroup.com",
+      "social": {
+        "facebook": true,
+        "instagram": false,
+        "linkedin": false
+      },
+      "tag": "Operative composite synergy"
+    },
+    "details": {
+      "dollarSigns": 1,
+      "cuisine": "Asian",
+      "opentable": true,
+      "insideTips": "In alias quia qui neque ut velit dicta.",
+      "knownFor": [
+        "Bar",
+        "Outdoor",
+        "Breakfast",
+        "Private Seating"
+      ]
+    },
+    "zagatReview": {
+      "description": "Eius recusandae soluta autem doloribus vero molestiae sit.",
+      "review": 1
+    },
+    "publications": [
+      {
+        "img": "http://lorempixel.com/640/480/food",
+        "title": "Unbranded Plastic Hat",
+        "url": "https://walter.net",
+        "date": "2015-07-05T06:52:12.417Z"
+      },
+      {
+        "img": "http://lorempixel.com/640/480/food",
+        "title": "Intelligent Fresh Mouse",
+        "url": "http://mable.info",
+        "date": "2013-04-07T10:04:39.909Z"
+      },
+      {
+        "img": "http://lorempixel.com/640/480/food",
+        "title": "Tasty Metal Sausages",
+        "url": "https://sadye.biz",
+        "date": "2015-06-24T00:19:25.003Z"
+      },
+      {
+        "img": "http://lorempixel.com/640/480/food",
+        "title": "Fantastic Plastic Keyboard",
+        "url": "http://maximo.net",
+        "date": "2012-10-11T04:27:45.968Z"
+      },
+      {
+        "img": "http://lorempixel.com/640/480/food",
+        "title": "Awesome Fresh Cheese",
+        "url": "https://sandra.name",
+        "date": "2015-11-12T17:48:51.237Z"
+      }
+    ],
+    "photos": [],
+    "whatToOrder": [
+      {
+        "title": "Refined Metal Ball",
+        "img": "http://lorempixel.com/640/480/food"
+      }
+    ],
+    "reviews": [
+      {
+        "name": "Wilford Abernathy",
+        "date": "2013-06-26T04:11:43.071Z",
+        "text": "Id ad itaque dolorem aspernatur ut velit eum libero laboriosam. Rerum quod maxime enim repellendus ut magnam rerum atque reprehenderit. Exercitationem ipsam sit deserunt eos aliquam nesciunt est laboriosam. Cumque nihil aut nulla rerum cupiditate expedita eius dicta. Modi officia rerum ex eaque mollitia iste est. Aut deleniti nemo.",
+        "profilePic": "http://lorempixel.com/640/480/people",
+        "star": false,
+        "numOfStars": 3
+      },
+      {
+        "name": "Marcus Bogisich",
+        "date": "2012-06-05T10:25:35.782Z",
+        "text": "Suscipit sequi nihil quos in animi qui aut corporis. Qui vel dicta. Tempora nobis autem qui neque eligendi voluptatum voluptas. Suscipit odio nihil mollitia rerum laudantium aut dolorum tempore. Nisi dicta tenetur iusto modi minima harum.",
+        "profilePic": "http://lorempixel.com/640/480/people",
+        "star": true,
+        "numOfStars": 3
+      },
+      {
+        "name": "Lia Pfeffer",
+        "date": "2013-01-14T21:21:15.620Z",
+        "text": "Corporis sit esse ut enim ut rerum. Ut temporibus eum qui possimus dolorum. Totam nemo accusantium ab qui vel natus.",
+        "profilePic": "http://lorempixel.com/640/480/people",
+        "star": false,
+        "numOfStars": 1
+      },
+      {
+        "name": "Sigurd Hahn",
+        "date": "2012-02-08T22:28:29.494Z",
+        "text": "Autem aperiam dolor occaecati debitis sit eligendi laboriosam. Voluptas aut libero est. Suscipit reiciendis hic mollitia aperiam incidunt tempore. Dolorem eligendi eum aut modi qui aliquid.",
+        "profilePic": "http://lorempixel.com/640/480/people",
+        "star": false,
+        "numOfStars": 4
+      },
+      {
+        "name": "Rachael Nicolas",
+        "date": "2013-03-22T06:21:35.760Z",
+        "text": "Pariatur aut quisquam et a corporis. Ut qui cum sapiente blanditiis hic mollitia architecto reprehenderit aliquid. Dolorem perferendis accusamus quae occaecati quos et. Aut minus veniam id consectetur est. Sit est officiis quas dolor.",
+        "profilePic": "http://lorempixel.com/640/480/people",
+        "star": false,
+        "numOfStars": 4
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "businessInfo": {
+      "name": "Baumbach, Walsh and Towne",
+      "location": {
+        "address": "5331 Winfield Parkways",
+        "neighborhood": "SOMA"
+      },
+      "phone": "767.825.3215 x22368",
+      "times": {
+        "Sunday": [
+          "9:00am",
+          "6:00pm"
+        ],
+        "Monday": [
+          "12:00am",
+          "9:00pm"
+        ],
+        "Tuesday": [
+          "12:00am",
+          "9:00pm"
+        ],
+        "Wednesday": [
+          "12:00am",
+          "9:00pm"
+        ],
+        "Thursday": [
+          "12:00am",
+          "9:00pm"
+        ],
+        "Friday": [
+          "12:00am",
+          "9:00pm"
+        ],
+        "Saturday": [
+          "9:00am",
+          "6:00pm"
+        ]
+      },
+      "email": "BaumbachWalshandTowne5@gmail.com",
+      "website": "www.Baumbach,Walsh and Towne.com",
+      "social": {
+        "facebook": true,
+        "instagram": false,
+        "linkedin": true
+      },
+      "tag": "Devolved tertiary support"
+    },
+    "details": {
+      "dollarSigns": 3,
+      "cuisine": "Brunch",
+      "opentable": false,
+      "insideTips": "Eos est et.",
+      "knownFor": [
+        "Breakfast",
+        "Outdoor",
+        "Bar"
+      ]
+    },
+    "zagatReview": {
+      "description": "Tempore voluptas non velit ullam tempora veniam tempore rerum.",
+      "review": 5
+    },
+    "publications": [
+      {
+        "img": "http://lorempixel.com/640/480/food",
+        "title": "Intelligent Plastic Tuna",
+        "url": "https://sammie.name",
+        "date": "2014-01-26T08:47:03.294Z"
+      },
+      {
+        "img": "http://lorempixel.com/640/480/food",
+        "title": "Fantastic Cotton Ball",
+        "url": "http://theodora.biz",
+        "date": "2014-08-20T04:00:03.115Z"
+      },
+      {
+        "img": "http://lorempixel.com/640/480/food",
+        "title": "Generic Concrete Ball",
+        "url": "http://nichole.com",
+        "date": "2012-02-09T06:14:32.322Z"
+      },
+      {
+        "img": "http://lorempixel.com/640/480/food",
+        "title": "Tasty Wooden Tuna",
+        "url": "http://valerie.org",
+        "date": "2012-09-07T12:28:47.974Z"
+      },
+      {
+        "img": "http://lorempixel.com/640/480/food",
+        "title": "Sleek Cotton Cheese",
+        "url": "https://neva.net",
+        "date": "2014-06-20T14:45:28.435Z"
+      }
+    ],
+    "photos": [],
+    "whatToOrder": [
+      {
+        "title": "Generic Fresh Shirt",
+        "img": "http://lorempixel.com/640/480/food"
+      },
+      {
+        "title": "Gorgeous Fresh Keyboard",
+        "img": "http://lorempixel.com/640/480/food"
+      }
+    ],
+    "reviews": [
+      {
+        "name": "Jesse Monahan",
+        "date": "2013-04-16T09:07:00.078Z",
+        "text": "Perspiciatis qui et minus. Quis est ipsum. Ut veniam vitae maxime quidem ducimus voluptatibus nesciunt architecto voluptates. Explicabo illum eius ratione excepturi nostrum a et consequatur. Odit rerum adipisci sed at et facilis.",
+        "profilePic": "http://lorempixel.com/640/480/people",
+        "star": false,
+        "numOfStars": 2
+      },
+      {
+        "name": "Mervin Anderson",
+        "date": "2014-06-25T22:07:33.853Z",
+        "text": "Quisquam reprehenderit tempora. Quasi sed magnam rerum nesciunt quia dicta voluptate. Natus voluptatum dolorum dicta. Distinctio assumenda quos quisquam distinctio harum autem ad ea harum. Laboriosam corrupti impedit occaecati quasi qui.",
+        "profilePic": "http://lorempixel.com/640/480/people",
+        "star": false,
+        "numOfStars": 4
+      },
+      {
+        "name": "Nora Gaylord",
+        "date": "2015-12-17T16:13:29.256Z",
+        "text": "Dolorum et est vero sunt. Voluptates fuga omnis aliquam velit et. Quia nisi labore praesentium quis odit alias eos.",
+        "profilePic": "http://lorempixel.com/640/480/people",
+        "star": false,
+        "numOfStars": 2
+      },
+      {
+        "name": "Florine Durgan",
+        "date": "2014-10-07T14:58:29.447Z",
+        "text": "Corrupti quidem voluptates dolorem nulla ut sequi earum necessitatibus. Facere sed est. Facere consequatur rerum. Culpa rerum eum voluptatem eos ut porro vero accusantium. Possimus voluptate mollitia aspernatur est suscipit provident.",
+        "profilePic": "http://lorempixel.com/640/480/people",
+        "star": false,
+        "numOfStars": 3
+      },
+      {
+        "name": "Gracie Braun",
+        "date": "2013-03-12T04:24:20.667Z",
+        "text": "Blanditiis enim repudiandae nisi ut illo temporibus quia at. Accusamus ea voluptates non. Rem fuga nulla. Mollitia modi unde dolor totam id neque voluptas.",
+        "profilePic": "http://lorempixel.com/640/480/people",
+        "star": false,
+        "numOfStars": 4
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "businessInfo": {
+      "name": "Runolfsdottir Group",
+      "location": {
+        "address": "3176 Gulgowski Points",
+        "neighborhood": "Nob Hill"
+      },
+      "phone": "1-891-074-9654",
+      "times": {
+        "Sunday": [
+          "11:00am",
+          "6:00pm"
+        ],
+        "Monday": [
+          "8:00am",
+          "11:00pm"
+        ],
+        "Tuesday": [
+          "8:00am",
+          "11:00pm"
+        ],
+        "Wednesday": [
+          "8:00am",
+          "11:00pm"
+        ],
+        "Thursday": [
+          "8:00am",
+          "11:00pm"
+        ],
+        "Friday": [
+          "8:00am",
+          "11:00pm"
+        ],
+        "Saturday": [
+          "10:00am",
+          "8:00pm"
+        ]
+      },
+      "email": "RunolfsdottirGroup.Skiles81@gmail.com",
+      "website": "www.RunolfsdottirGroup.com",
+      "social": {
+        "facebook": true,
+        "instagram": true,
+        "linkedin": false
+      },
+      "tag": "Future-proofed high-level benchmark"
+    },
+    "details": {
+      "dollarSigns": 3,
+      "cuisine": "American",
+      "opentable": true,
+      "insideTips": "Suscipit nulla unde magni non.",
+      "knownFor": [
+        "Outdoor",
+        "Dinner",
+        "Breakfast",
+        "Lunch",
+        "Bar"
+      ]
+    },
+    "zagatReview": {
+      "description": "Ut nostrum voluptatem harum deserunt.",
+      "review": 1
+    },
+    "publications": [
+      {
+        "img": "http://lorempixel.com/640/480/food",
+        "title": "Tasty Soft Hat",
+        "url": "https://rosalind.net",
+        "date": "2012-03-25T16:04:05.484Z"
+      }
+    ],
+    "photos": [],
+    "whatToOrder": [
+      {
+        "title": "Handmade Soft Gloves",
+        "img": "http://lorempixel.com/640/480/food"
+      },
+      {
+        "title": "Intelligent Cotton Shirt",
+        "img": "http://lorempixel.com/640/480/food"
+      },
+      {
+        "title": "Refined Plastic Pizza",
+        "img": "http://lorempixel.com/640/480/food"
+      },
+      {
+        "title": "Handcrafted Fresh Keyboard",
+        "img": "http://lorempixel.com/640/480/food"
+      }
+    ],
+    "reviews": [
+      {
+        "name": "Josefa Swift",
+        "date": "2015-06-26T19:53:13.751Z",
+        "text": "Ex ut possimus repudiandae cupiditate. Rerum vero culpa voluptatem atque est. Non et enim itaque adipisci consequatur iure vel. Facere enim et adipisci dicta aliquid et et perspiciatis rem. Voluptatem in laboriosam non non.",
+        "profilePic": "http://lorempixel.com/640/480/people",
+        "star": false,
+        "numOfStars": 1
+      },
+      {
+        "name": "Bradly Hackett",
+        "date": "2013-07-10T19:01:25.301Z",
+        "text": "Et ullam reprehenderit dolor. Nulla sed non fugit aperiam. Mollitia rem totam qui sed omnis laboriosam omnis in occaecati. Dignissimos expedita labore veniam qui non porro sed cum.",
+        "profilePic": "http://lorempixel.com/640/480/people",
+        "star": true,
+        "numOfStars": 3
+      },
+      {
+        "name": "Reyna Cremin",
+        "date": "2013-09-04T14:07:15.649Z",
+        "text": "Reprehenderit qui dolores nemo. Facere quia minima quasi magni vitae odit at. Aut provident qui. Eius pariatur ut inventore. Enim ea deleniti eos voluptatibus ullam enim autem sapiente aut.",
+        "profilePic": "http://lorempixel.com/640/480/people",
+        "star": false,
+        "numOfStars": 2
+      }
+    ]
+  }
+]
