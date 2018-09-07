@@ -1,7 +1,7 @@
 {
-  "name": "navbar",
+  "name": "reviews",
   "version": "",
-  "description": "navbar component to the zagat FEC project",
+  "description": "reviews component to the zagat FEC project",
   "author": "Shane Tajima",
   "license": "",
   "engines": {
