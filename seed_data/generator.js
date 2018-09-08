@@ -67,7 +67,7 @@ const createRestaurant = function(id) {
   const weekdayEnd = `${faker.random.number({ min: 7, max: 12 })}:00pm`;
   const companyName = faker.company.companyName();
   return {
-    id: id,
+    _id: id,
     businessInfo: {
       name: companyName,
       location: {
