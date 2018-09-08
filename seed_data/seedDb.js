@@ -12,7 +12,7 @@ MongoClient.connect(
       console.log('Error connecting to the DB', error);
     } else {
       console.log('Connected successfully to mlab');
-      const dbo = db.db('fec-zagat-navbar');
+      const dbo = db.db('fec-zagat-reviews');
       dbo.collection('restaurants').insertMany(seedData, (err, res) => {
         if (err) throw err;
         console.log('Database seeded');
