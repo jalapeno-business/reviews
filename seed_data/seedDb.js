@@ -1,21 +1,17 @@
-const { MongoClient } = require('mongodb');
+const mongoose = require('mongoose');
 const seedData = require('./zagat-data.json');
+const { Restaurant } = require('../server/mongoose/Restaurant.js');
 
-const mlab = 'mongodb://zagat:zagatnavbar1!@ds149742.mlab.com:49742/fec-zagat-reviews';
-const options = { useNewUrlParser: true };
+const Restaurants = seedData.map((restaurant) => {
+  const r = new Restaurant(restaurant);
+  return r;
+});
 
-const handleConnect = (error, db) => {
+Restaurant.collection.insertMany(Restaurants, (error) => {
   if (error) {
-    // console.log('Error connecting to the DB', error);
+    console.log('Seed error', error);
   } else {
-    // console.log('Connected successfully to mlab');
-    const dbo = db.db('fec-zagat-reviews');
-    dbo.collection('restaurants').insertMany(seedData, (err) => {
-      if (err) throw err;
-      // console.log('Database seeded');
-      db.close();
-    });
+    console.log('DB seeded');
   }
-};
-
-MongoClient.connect(mlab, options, handleConnect);
+  mongoose.disconnect();
+});

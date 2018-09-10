@@ -1,32 +1,18 @@
 const express = require('express');
-const { MongoClient } = require('mongodb');
-
-const app = express();
-const mlab = 'mongodb://zagat:zagatnavbar1!@ds149742.mlab.com:49742/fec-zagat-reviews';
+const { Restaurant } = require('./mongoose/Restaurant.js');
 
 // Config
-const mongoOptions = { useNewUrlParser: true };
+const app = express();
+
 // Models
 const selectRestaurant = (id, callback) => {
-  const select = (connError, client) => {
-    if (connError) {
-      console.log('Error connecting to the DB', connError);
-      callback(connError);
+  Restaurant.findOne({ _id: id }, (error, restaurant) => {
+    if (error) {
+      callback(error);
     } else {
-      console.log('Connected successfully to mlab');
-      const dbo = client.db('fec-zagat-reviews');
-      dbo.collection('restaurants').findOne({ _id: Number(id) }, (findError, result) => {
-        if (findError) {
-          callback(findError);
-        } else {
-          console.log('Got restaurant');
-          callback(null, result);
-        }
-        client.close();
-      });
+      callback(null, restaurant);
     }
-  };
-  MongoClient.connect(mlab, mongoOptions, select);
+  });
 };
 
 // Controllers

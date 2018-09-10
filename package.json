@@ -23,7 +23,8 @@
   "dependencies": {
     "express": "^4.16.3",
     "faker": "^4.1.0",
-    "mongodb": "^3.1.4"
+    "mongodb": "^3.1.4",
+    "mongoose": "^5.2.14"
   },
   "devDependencies": {
     "eslint": "^5.5.0",
