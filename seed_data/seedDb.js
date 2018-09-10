@@ -1,5 +1,5 @@
 const { MongoClient } = require('mongodb');
-const seedData = require('./zaget-data.json');
+const seedData = require('./zagat-data.json');
 
 const mlab = 'mongodb://zagat:zagatnavbar1!@ds149742.mlab.com:49742/fec-zagat-reviews';
 const options = { useNewUrlParser: true };
