@@ -3,7 +3,11 @@
   "version": "",
   "description": "reviews component to the zagat FEC project",
   "author": "Shane Tajima",
-  "license": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jalapeno-business/reviews.git"
+  },
   "engines": {
     "node": ">=6.13.0"
   },
@@ -23,6 +27,7 @@
   "devDependencies": {
     "eslint": "^5.5.0",
     "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor",
+    "jest": "^23.6.0",
     "nodemon": "^1.18.4",
     "pre-commit": "^1.2.2"
   }
