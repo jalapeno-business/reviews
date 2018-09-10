@@ -9,17 +9,17 @@ const tipsChoices = ['Breakfast', 'Lunch', 'Dinner', 'Private Seating', 'Outdoor
 // TODO
 const generatePhotos = (num) => {
   const photos = [];
-  for (let i = 0; i <= num; i++) {
+  for (let i = 0; i <= num; i += 1) {
     photos.push();
   }
   return photos;
 };
 
 const generateReviews = (num) => {
-  const generateReviews = [];
-  for (let i = 0; i <= num; i++) {
-    generateReviews.push({
-      name: faker.name.firstName() + ' ' + faker.name.lastName(),
+  const reviews = [];
+  for (let i = 0; i <= num; i += 1) {
+    reviews.push({
+      name: `${faker.name.firstName()} ${faker.name.lastName()}`,
       date: faker.date.between('2012-01-01', '2015-12-31'),
       text: faker.lorem.paragraph(),
       profilePic: faker.image.people(),
@@ -27,12 +27,12 @@ const generateReviews = (num) => {
       numOfStars: faker.random.number({ min: 1, max: 4 }),
     });
   }
-  return generateReviews;
+  return reviews;
 };
 
 const generateWhatToOrder = (num) => {
   const WhatToOrder = [];
-  for (let i = 0; i <= num; i++) {
+  for (let i = 0; i <= num; i += 1) {
     WhatToOrder.push({
       title: faker.commerce.productName(),
       img: faker.image.food(),
@@ -43,7 +43,7 @@ const generateWhatToOrder = (num) => {
 
 const generatePublications = (num) => {
   const publications = [];
-  for (let i = 0; i <= num; i++) {
+  for (let i = 0; i <= num; i += 1) {
     publications.push({
       img: faker.image.food(),
       title: faker.commerce.productName(),
@@ -56,18 +56,18 @@ const generatePublications = (num) => {
 
 const generateTips = (num) => {
   const tips = new Set();
-  for (let i = 0; i <= num; i++) {
+  for (let i = 0; i <= num; i += 1) {
     tips.add(tipsChoices[faker.random.number({ min: 0, max: 5 })]);
   }
   return [...tips];
 };
 
-const createRestaurant = function(id) {
+const createRestaurant = (id) => {
   const weekdayStart = `${faker.random.number({ min: 7, max: 12 })}:00am`;
   const weekdayEnd = `${faker.random.number({ min: 7, max: 12 })}:00pm`;
   const companyName = faker.company.companyName();
   return {
-    id: id,
+    _id: id,
     businessInfo: {
       name: companyName,
       location: {
@@ -123,6 +123,8 @@ while (count <= maxCount) {
   count += 1;
 }
 
-console.log(restaurants.length, 'restaurants created');
+// console.log(restaurants.length, 'restaurants created');
 const json = JSON.stringify(restaurants, null, 2);
-fs.writeFileSync(path.join(__dirname, 'zaget-data.json'), json, 'utf8', () => console.log('Data generation done'));
+fs.writeFileSync(path.join(__dirname, 'zaget-data.json'), json, 'utf8', () => {
+  // console.log('Data generation done');
+});

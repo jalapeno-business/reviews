@@ -8,15 +8,22 @@
     "node": ">=6.13.0"
   },
   "scripts": {
+    "start": "nodemon ./server/server.js",
+    "pretest": "eslint --ignore-path .gitignore .",
     "seed": "node ./seed_data/generator.js & node ./seed_data/seedDb.js"
   },
+  "pre-commit": [
+    "pretest"
+  ],
   "dependencies": {
-    "fs": "0.0.1-security",
-    "mongodb": "^3.1.4",
-    "path": "^0.12.7"
+    "express": "^4.16.3",
+    "faker": "^4.1.0",
+    "mongodb": "^3.1.4"
   },
   "devDependencies": {
+    "eslint": "^5.5.0",
     "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor",
-    "faker": "^4.1.0"
+    "nodemon": "^1.18.4",
+    "pre-commit": "^1.2.2"
   }
 }
