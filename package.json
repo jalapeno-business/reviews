@@ -12,6 +12,9 @@
     "pretest": "eslint --ignore-path .gitignore .",
     "seed": "node ./seed_data/generator.js & node ./seed_data/seedDb.js"
   },
+  "pre-commit": [
+    "pretest"
+  ],
   "dependencies": {
     "express": "^4.16.3",
     "faker": "^4.1.0",
@@ -20,6 +23,7 @@
   "devDependencies": {
     "eslint": "^5.5.0",
     "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor",
-    "nodemon": "^1.18.4"
+    "nodemon": "^1.18.4",
+    "pre-commit": "^1.2.2"
   }
 }
