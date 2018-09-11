@@ -1,5 +1,5 @@
 const express = require('express');
-const { Restaurant, mongoose } = require('./mongoose/Restaurant.js');
+const Restaurant = require('./mongoose/Restaurant.js');
 
 // Config
 const app = express();
@@ -25,4 +25,4 @@ const getRestaurant = (req, res) => {
 // Routes
 app.get('/api/restaurant/:id', getRestaurant);
 
-module.exports = { app, mongoose };
+module.exports = app;

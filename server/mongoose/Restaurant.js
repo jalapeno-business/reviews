@@ -18,6 +18,4 @@ const Restaurant = mongoose.model('Restaurant', {
   ],
 });
 
-module.exports = {
-  Restaurant,
-};
+module.exports = Restaurant;
