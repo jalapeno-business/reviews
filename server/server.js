@@ -1,7 +1,7 @@
+const mongooseWrapper = require('./mongoose/db.js');
 const app = require('./app.js');
 
-console.log('server.js');
-
+mongooseWrapper.connect();
 const PORT = process.env.PORT || 8000;
 
 // Start
