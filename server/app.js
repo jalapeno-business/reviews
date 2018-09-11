@@ -1,35 +1,28 @@
 const express = require('express');
-const { Restaurant } = require('./mongoose/Restaurant.js');
+const { Restaurant, mongoose } = require('./mongoose/Restaurant.js');
 
 // Config
 const app = express();
 
 // Models
-const selectRestaurant = (id, callback) => {
-  Restaurant.findOne({ _id: id }, (error, restaurant) => {
-    if (error) {
-      callback(error);
-    } else {
-      callback(null, restaurant);
-    }
-  });
-};
+const selectRestaurant = id => Restaurant.findOne({ _id: id })
+  .then(restaurant => restaurant)
+  .catch(error => error);
 
 // Controllers
 const getRestaurant = (req, res) => {
   console.log('Getting restaurant');
   const { id } = req.params;
-  selectRestaurant(id, (error, restaurant) => {
-    if (error) {
-      res.status(400).end();
-    } else {
-      console.log('Get successful');
-      res.status(200).json(restaurant);
-    }
+  selectRestaurant(id).then((restaurant) => {
+    console.log('Get successful');
+    res.status(200).json(restaurant);
+  }).catch((error) => {
+    console.log(error);
+    res.status(400).end();
   });
 };
 
 // Routes
 app.get('/api/restaurant/:id', getRestaurant);
 
-module.exports = app;
+module.exports = { app, mongoose };
