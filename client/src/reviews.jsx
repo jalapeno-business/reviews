@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import styles from './reviews.styles.css';
 
 class Reviews extends React.Component {
   constructor(props) {
@@ -11,7 +12,7 @@ class Reviews extends React.Component {
 
   render() {
     return (
-      <div>React works!</div>
+      <div className={styles.red}>React works!</div>
     );
   }
 }
