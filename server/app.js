@@ -1,8 +1,10 @@
 const express = require('express');
+const path = require('path');
 const Restaurant = require('./mongoose/Restaurant.js');
 
 // Config
 const app = express();
+app.use(express.static(path.join(__dirname, '../client')));
 
 // Models
 const selectRestaurant = id => Restaurant.findOne({ _id: id })
