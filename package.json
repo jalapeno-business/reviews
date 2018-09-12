@@ -14,8 +14,8 @@
   "scripts": {
     "start": "nodemon ./server/server.js",
     "pretest": "eslint --ignore-path .gitignore .",
-    "jest": "jest",
-    "seed": "node ./seed_data/generator.js & node ./seed_data/seedDb.js"
+    "seed": "node ./seed_data/generator.js & node ./seed_data/seedDb.js",
+    "test": "jest --forceExit"
   },
   "pre-commit": [
     "pretest"
