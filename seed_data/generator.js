@@ -9,7 +9,7 @@ const generateReviews = (num) => {
       name: `${faker.name.firstName()} ${faker.name.lastName()}`,
       date: faker.date.between('2012-01-01', '2015-12-31'),
       text: faker.lorem.paragraph(),
-      profilePic: faker.image.people(),
+      profilePic: 'https://placeimg.com/72/72/people',
       star: faker.random.boolean(),
       numOfStars: faker.random.number({ min: 1, max: 4 }),
     });
@@ -37,5 +37,5 @@ while (count <= maxCount) {
 // console.log(restaurants.length, 'restaurants created');
 const json = JSON.stringify(restaurants, null, 2);
 fs.writeFileSync(path.join(__dirname, 'zagat-data.json'), json, 'utf8', () => {
-  // console.log('Data generation done');
+  console.log('Data generation done');
 });
