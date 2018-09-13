@@ -24,4 +24,4 @@ coverage
 build/
 dist/
 seed_data/zaget-data.json
-
+package-lock.json
