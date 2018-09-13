@@ -11,6 +11,11 @@
   "engines": {
     "node": ">=6.13.0"
   },
+  "jest": {
+    "moduleNameMapper": {
+      "^.+\\.(css|scss)$": "identity-obj-proxy"
+    }
+  },
   "scripts": {
     "react-dev": "webpack-dev-server --config ./webpack.config.js --mode development",
     "server-start": "nodemon ./server/server.js",
@@ -35,13 +40,17 @@
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
     "css-loader": "^1.0.0",
+    "enzyme": "^3.6.0",
+    "enzyme-adapter-react-16": "^1.5.0",
     "eslint": "^5.5.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^6.1.1",
     "eslint-plugin-react": "^7.11.1",
+    "identity-obj-proxy": "^3.0.0",
     "jest": "^23.6.0",
+    "jest-enzyme": "^6.0.4",
     "nodemon": "^1.18.4",
     "pre-commit": "^1.2.2",
     "react-hot-loader": "^4.3.6",

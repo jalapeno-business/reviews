@@ -2,7 +2,7 @@ const path = require('path');
 const webpack = require('webpack');
 
 module.exports = {
-  entry: path.join(__dirname, 'client', 'src', 'reviews.jsx'),
+  entry: path.join(__dirname, 'client', 'src', 'index.jsx'),
   module: {
     rules: [
       {
@@ -36,6 +36,9 @@ module.exports = {
   output: {
     path: path.join(__dirname, 'client', 'dist'),
     filename: 'bundle.js',
+  },
+  resolve: {
+    extensions: ['.js', '.jsx'],
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
