@@ -1,10 +1,13 @@
 const express = require('express');
 const path = require('path');
+const cors = require('cors');
+
 const Restaurant = require('./mongoose/Restaurant.js');
 
 // Config
 const app = express();
-app.use(express.static(path.join(__dirname, '../client')));
+app.use(cors());
+app.use(express.static(path.join(__dirname, '../client', 'dist')));
 
 // Models
 const selectRestaurant = id => Restaurant.findOne({ _id: id })
