@@ -6,7 +6,7 @@ const generateReviews = (num) => {
   const reviews = [];
   for (let i = 0; i <= num; i += 1) {
     reviews.push({
-      name: `${faker.name.firstName()} ${faker.name.lastName()}`,
+      name: `${faker.name.firstName()} ${faker.name.lastName().slice(0, 1)}.`,
       date: faker.date.between('2012-01-01', '2015-12-31'),
       text: faker.lorem.paragraph(),
       profilePic: 'https://placeimg.com/72/72/people',
