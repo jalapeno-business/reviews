@@ -14,6 +14,10 @@ export default class Reviews extends React.Component {
   }
 
   componentWillMount() {
+    this.getRestaurant();
+  }
+
+  getRestaurant() {
     axios.get(`http://${this.server}/api/restaurant${window.location.pathname}`)
       .then(res => res.data)
       .then(data => data.reviews)
@@ -50,6 +54,6 @@ export default class Reviews extends React.Component {
         </div>
       );
     }
-    return <div id="reviews" />;
+    return '';
   }
 }
