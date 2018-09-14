@@ -10,15 +10,31 @@ const Review = (props) => {
   } = props;
   return (
     <div className={styles.zgtGoogleReviewContainer}>
-      <span className={styles.parent}>
-        <img className={styles.profilePic} alt="profile pic" src={profilePic} />
-        {star ? <img className={styles.star} alt="profile pic" src="https://vignette.wikia.nocookie.net/justdance/images/2/2e/Star.png" /> : ''}
-      </span>
-      <span className={styles.details}>
-        <p>{name}</p>
-        <p className={styles.detailText}>{new Moment(date).format('MMMM D, Y')}</p>
+      <div className={styles.miniMode}>
         <p>{`${'★'.repeat(numOfStars)} ${text}`}</p>
-      </span>
+      </div>
+
+      <div className={styles.boxOne}>
+        <span className={styles.parent}>
+          <img className={styles.profilePic} alt="profile pic" src={profilePic} />
+          {star ? <img className={styles.star} alt="profile pic" src="https://vignette.wikia.nocookie.net/justdance/images/2/2e/Star.png" /> : ''}
+        </span>
+      </div>
+
+      <div className={styles.boxTwo}>
+        <span>
+          <p>{name}</p>
+          <p className={styles.detailText}>{new Moment(date).format('MMMM D, Y')}</p>
+          <p>{`${'★'.repeat(numOfStars)} ${text}`}</p>
+        </span>
+      </div>
+
+      <div className={[styles.miniMode].join(' ')}>
+        <span>{name}</span>
+        <span> · </span>
+        <span className={styles.detailText}>{new Moment(date).format('MMMM D, Y')}</span>
+      </div>
+
     </div>
   );
 };
