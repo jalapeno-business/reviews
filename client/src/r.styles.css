@@ -1,0 +1,222 @@
+/*! CSS Used from: https://www.zagat.com/app.1536884696.css */
+.layout-row{
+  box-sizing:border-box;
+  display:-webkit-box;
+  display:-webkit-flex;
+  display:flex;
+}
+.layout-row{
+  -webkit-box-orient:horizontal;
+  -webkit-box-direction:normal;
+  -webkit-flex-direction:row;
+  flex-direction:row;
+}
+.layout-wrap{
+  -webkit-flex-wrap:wrap;
+  flex-wrap:wrap;
+}
+@media (max-width: 599px){
+   .hide-xs:not(.show-xs):not(.show){
+      display:none;
+  }
+   .flex-order-xs-1{
+      -webkit-box-ordinal-group:2;
+      -webkit-order:1;
+      order:1;
+  }
+   .flex-order-xs-2{
+      -webkit-box-ordinal-group:3;
+      -webkit-order:2;
+      order:2;
+  }
+   .layout-xs-column{
+      box-sizing:border-box;
+      display:-webkit-box;
+      display:-webkit-flex;
+      display:flex;
+  }
+   .layout-xs-column{
+      -webkit-box-orient:vertical;
+      -webkit-box-direction:normal;
+      -webkit-flex-direction:column;
+      flex-direction:column;
+  }
+}
+@media (min-width: 600px){
+   .flex-gt-xs-25{
+      -webkit-box-flex:1;
+      -webkit-flex:1 1 100%;
+      flex:1 1 100%;
+      max-width:25%;
+      max-height:100%;
+      box-sizing:border-box;
+  }
+   .layout-row > .flex-gt-xs-25{
+      -webkit-box-flex:1;
+      -webkit-flex:1 1 100%;
+      flex:1 1 100%;
+      max-width:25%;
+      max-height:100%;
+      box-sizing:border-box;
+  }
+   .flex-gt-xs-75{
+      -webkit-box-flex:1;
+      -webkit-flex:1 1 100%;
+      flex:1 1 100%;
+      max-width:75%;
+      max-height:100%;
+      box-sizing:border-box;
+  }
+   .layout-row > .flex-gt-xs-75{
+      -webkit-box-flex:1;
+      -webkit-flex:1 1 100%;
+      flex:1 1 100%;
+      max-width:75%;
+      max-height:100%;
+      box-sizing:border-box;
+  }
+}
+@media (min-width: 600px) and (max-width: 959px){
+   .hide-gt-xs:not(.show-gt-xs):not(.show-sm):not(.show){
+      display:none;
+  }
+}
+@media (min-width: 960px) and (max-width: 1279px){
+   .hide-gt-xs:not(.show-gt-xs):not(.show-gt-sm):not(.show-md):not(.show){
+      display:none;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1919px){
+   .hide-gt-xs:not(.show-gt-xs):not(.show-gt-sm):not(.show-gt-md):not(.show-lg):not(.show){
+      display:none;
+  }
+}
+@media (min-width: 1920px){
+   .hide-gt-xs:not(.show-gt-xs):not(.show-gt-sm):not(.show-gt-md):not(.show-gt-lg):not(.show-xl):not(.show){
+      display:none;
+  }
+}
+div:focus,span:focus,a:focus{
+  outline:none;
+}
+.section-heading{
+  color:#656666;
+  font:16px/24px 'Calibre-Semibold';
+  letter-spacing:.086em;
+  text-transform:uppercase;
+}
+.detail-text{
+  color:#656666;
+  font:15px/24px 'Calibre-Regular';
+  letter-spacing:.013em;
+}
+.zgt-google-review-profile-info{
+  min-width:88px;
+}
+.zgt-google-review-container.layout-row .zgt-google-review-column{
+  max-height:none;
+}
+.zgt-google-review-photo{
+  background-size:contain;
+  display:inline-block;
+  height:72px;
+  width:72px;
+}
+.zgt-google-review-time.detail-text{
+  line-height:32px;
+}
+.zgt-google-review-see-more{
+  color:#9b9b9b;
+}
+.zgt-google-review-profile-link{
+  text-decoration:none;
+}
+@media (min-width:600px){
+   .zgt-google-review-container{
+      border-bottom:1px #d0d2d3 solid;
+      padding:24px 0 27px;
+  }
+}
+@media (max-width:599px){
+   .zgt-google-review-container{
+      padding-top:15px;
+  }
+   .zgt-google-review-photo{
+      height:18px;
+      width:18px;
+      vertical-align:middle;
+  }
+}
+.zgt-google-reviews-header-container{
+  border-bottom:1px #d0d2d3 solid;
+  padding-bottom:34px;
+}
+.zgt-google-reviews-data{
+  color:#101820;
+}
+@media (min-width:600px){
+   .zgt-google-reviews-title{
+      margin-right:32px;
+  }
+}
+@media (max-width:599px){
+   .zgt-google-reviews-data{
+      margin-top:14px;
+  }
+}
+.zgt-place-sheet-box{
+  background:white;
+  padding:0 32px 32px;
+}
+.zgt-place-sheet-section-title{
+  padding-top:24px;
+}
+@media (min-width:960px){
+   .zgt-place-sheet-box{
+      padding:0 40px 40px;
+  }
+   .zgt-place-sheet-bottom{
+      margin-top:40px;
+  }
+   .zgt-place-sheet-section-title{
+      padding-top:32px;
+  }
+}
+@media (min-width:600px) and (max-width:959px){
+   .zgt-place-sheet-bottom{
+      margin-top:32px;
+  }
+}
+@media (max-width:599px){
+   .zgt-place-sheet-box{
+      padding-left:24px;
+      padding-right:24px;
+  }
+   .zgt-place-sheet-mobile-separator{
+      margin-top:2px;
+  }
+}
+.zgt-stars-container{
+  vertical-align:middle;
+}
+.zgt-stars-alignment{
+  position:relative;
+  display:inline-block;
+}
+.zgt-stars-underlay{
+  opacity:.2;
+}
+.zgt-stars-overlay{
+  left:0;
+  position:absolute;
+  top:0;
+}
+/*! CSS Used fontfaces */
+@font-face{
+  font-family:'Calibre-Semibold';
+  src:url('https://www.zagat.com/assets/fonts/CalibreWeb-Semibold.woff2') format('woff2'),url('https://www.zagat.com/assets/fonts/CalibreWeb-Semibold.woff') format('woff');
+}
+@font-face{
+  font-family:'Calibre-Regular';
+  src:url('https://www.zagat.com/assets/fonts/CalibreWeb-Regular.woff2') format('woff2'),url('https://www.zagat.com/assets/fonts/CalibreWeb-Regular.woff') format('woff');
+}

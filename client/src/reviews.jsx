@@ -1,6 +1,6 @@
 import React from 'react';
 import axios from 'axios';
-// import styles from './reviews.styles.css';
+import styles from './reviews.styles.css';
 import Review from './review';
 
 export default class Reviews extends React.Component {
@@ -14,8 +14,7 @@ export default class Reviews extends React.Component {
   }
 
   componentWillMount() {
-    console.log(window.location);
-    axios.get(`http://${this.server}/api/restaurant/2`)
+    axios.get(`http://${this.server}/api/restaurant${window.location.pathname}`)
       .then(res => res.data)
       .then(data => data.reviews)
       .then((reviews) => {
@@ -27,25 +26,30 @@ export default class Reviews extends React.Component {
 
   render() {
     const { reviews, overallStars } = this.state;
-    return (
-      <div id="reviews">
-        <span>GOOGLE REVIEWS </span>
-        <span>{overallStars}</span>
-        &nbsp;
-        <span>{'★'.repeat(Math.ceil(overallStars))}</span>
-        <hr />
-        {reviews.map(review => (
-          <Review
-            key={review.name}
-            numOfStars={review.numOfStars}
-            date={review.date}
-            name={review.name}
-            text={review.text}
-            profilePic={review.profilePic}
-            star={review.star}
-          />
-        ))}
-      </div>
-    );
+    if (reviews.length > 0) {
+      return (
+        <div id={styles.reviews} className={styles.zgtPlaceSheetBox}>
+          <div className={[styles.zgtGoogleReviewsHeaderContainer, styles.sectionHeading, styles.zgtPlaceSheetBottom].join(' ')}>
+            <span className={styles.zgtGoogleReviewsTitle}>Google Reviews</span>
+            <span className={styles.zgtGoogleReviewsData}>
+              {overallStars}
+              <span>{'★'.repeat(Math.ceil(overallStars))}</span>
+            </span>
+          </div>
+          {reviews.map(review => (
+            <Review
+              key={review.name}
+              numOfStars={review.numOfStars}
+              date={review.date}
+              name={review.name}
+              text={review.text}
+              profilePic={review.profilePic}
+              star={review.star}
+            />
+          ))}
+        </div>
+      );
+    }
+    return <div id="reviews" />;
   }
 }
