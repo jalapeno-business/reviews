@@ -46,6 +46,9 @@ module.exports = {
   // watch: true,
   devServer: {
     contentBase: './client/dist',
+    historyApiFallback: {
+      index: 'index.html',
+    },
     hot: true,
   },
 };
