@@ -11,21 +11,23 @@ export default class Reviews extends React.Component {
       overallStars: null,
       reviews: [],
     };
+    this.setData = this.setData.bind(this);
+    this.getRestaurant = this.getRestaurant.bind(this);
   }
 
   componentWillMount() {
-    this.getRestaurant();
+    this.getRestaurant(window.location.pathname).then(this.setData);
   }
 
-  getRestaurant() {
-    axios.get(`http://${this.server}/api/restaurant${window.location.pathname}`)
-      .then(res => res.data)
-      .then(data => data.reviews)
-      .then((reviews) => {
-        const starsSum = reviews.reduce((avg, { numOfStars }) => avg + numOfStars, 0);
-        const overallStars = (starsSum / reviews.length).toFixed(1);
-        this.setState({ reviews, overallStars });
-      });
+  setData(res) {
+    const { reviews } = res.data;
+    const starsSum = reviews.reduce((avg, { numOfStars }) => avg + numOfStars, 0);
+    const overallStars = (starsSum / reviews.length).toFixed(1);
+    this.setState({ reviews, overallStars });
+  }
+
+  getRestaurant(id) {
+    return axios.get(`http://${this.server}/api/restaurant${id}`);
   }
 
   render() {
