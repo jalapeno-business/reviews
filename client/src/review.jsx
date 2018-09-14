@@ -29,7 +29,7 @@ const Review = (props) => {
         </span>
       </div>
 
-      <div className={[styles.miniMode].join(' ')}>
+      <div className={[styles.miniMode, styles.miniDetails].join(' ')}>
         <span>{name}</span>
         <span> · </span>
         <span className={styles.detailText}>{new Moment(date).format('MMMM D, Y')}</span>
