@@ -6,11 +6,14 @@ export default class ReviewText extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      shortMode: true,
+      shortMode: true, // when true, show the trimmed text with '... Show More'
     };
     this.toggleMode = this.toggleMode.bind(this);
   }
 
+  /**
+   * Inverts the value of shortMode
+   */
   toggleMode() {
     const { shortMode } = this.state;
     this.setState({ shortMode: !shortMode });

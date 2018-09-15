@@ -6,15 +6,19 @@ import Review from './review';
 export default class Reviews extends React.Component {
   constructor(props) {
     super(props);
-    this.server = 'localhost:8080';
+    this.server = 'localhost:8080'; // address of the API server
     this.state = {
-      overallStars: null,
-      reviews: [],
+      overallStars: null, // overall score of a restaurant
+      reviews: [], // all the reviews of a restaurant
     };
     this.setData = this.setData.bind(this);
     this.getRestaurant = this.getRestaurant.bind(this);
   }
 
+  /**
+   * Default to restaurant 1 if none specified
+   * Get and set data before mounting component
+   */
   componentWillMount() {
     if (window.location.pathname === '/') {
       window.location.pathname = '/1';
@@ -22,6 +26,11 @@ export default class Reviews extends React.Component {
     this.getRestaurant(window.location.pathname).then(this.setData);
   }
 
+  /**
+   * Use the restaurant reviews to generate the overall
+   * restaurant rating. Then update the state.
+   * @param {*} res Response object from get request
+   */
   setData(res) {
     const { reviews } = res.data;
     const starsSum = reviews.reduce((avg, { numOfStars }) => avg + numOfStars, 0);
@@ -29,6 +38,10 @@ export default class Reviews extends React.Component {
     this.setState({ reviews, overallStars });
   }
 
+  /**
+   * GETs a restaurant
+   * @param {*} id ID of the restaurant
+   */
   getRestaurant(id) {
     return axios.get(`http://${this.server}/api/restaurant${id}`);
   }
