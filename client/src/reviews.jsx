@@ -16,6 +16,9 @@ export default class Reviews extends React.Component {
   }
 
   componentWillMount() {
+    if (window.location.pathname === '/') {
+      window.location.pathname = '/1';
+    }
     this.getRestaurant(window.location.pathname).then(this.setData);
   }
 
