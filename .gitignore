@@ -23,5 +23,6 @@ coverage
 # Compiled Dirs (http://nodejs.org/api/addons.html)
 build/
 dist/
-seed_data/zaget-data.json
 
+seed_data/zagat-data.json
+package-lock.json

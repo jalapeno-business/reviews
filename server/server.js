@@ -2,7 +2,7 @@ const mongooseWrapper = require('./mongoose/db.js');
 const app = require('./app.js');
 
 mongooseWrapper.connect();
-const PORT = process.env.PORT || 8000;
+const PORT = process.env.PORT || 8080;
 
 // Start
 app.listen(PORT, (error) => {

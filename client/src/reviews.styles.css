@@ -1,0 +1,159 @@
+#reviews {
+  color: #101820;
+  font: 15px/20px 'Calibre-Regular';
+  letter-spacing: .013em;
+  min-width: 400px;
+  max-width: 1000px;
+}
+#reviews div:focus { 
+  outline: none; 
+}
+#reviews .showMore { 
+  color: #9b9b9b;
+}
+#reviews p {
+  margin: 0;
+  margin-bottom: 5px;
+}
+.detailText{
+  color:#656666;
+  font:15px/24px 'Calibre-Regular';
+  letter-spacing:.013em;
+}
+.zgtGoogleReviewProfileInfo{
+  min-width:88px;
+}
+.zgtPlaceSheetBox {
+  background: white;
+  padding: 0 32px 32px;
+}
+#reviews .zgtPlaceSheetSectionTitle {
+  padding-top: 24px;
+}
+#reviews .zgtGoogleReviewsHeaderContainer {
+  border-bottom: 1px #d0d2d3 solid;
+  padding-bottom: 34px;
+}
+#reviews .zgtGoogleReviewProfileInfo {
+  min-width: 88px;
+}
+#reviews .sectionHeading{
+  color:#656666;
+  font:16px/24px 'Calibre-Semibold';
+  letter-spacing:.086em;
+  text-transform:uppercase;
+}
+#reviews .detailText {
+  color: rgb(101, 102, 102);
+  letter-spacing: 0.013em;
+  font: 15px/24px Calibre-Regular;
+}
+#reviews .zgtGoogleReviewContainer {
+  border-bottom:1px #d0d2d3 solid;
+  padding:24px 0 27px;
+  display: flex;
+  flex-direction: row;
+}
+#reviews .detailText {
+  line-height: 32px;
+}
+#reviews .sectionHeading .zgtGoogleReviewsData {
+  color: #101820;
+}
+#reviews .boxOne {
+  order: 0;
+}
+#reviews .boxTwo {
+  order: 1;
+}
+#reviews .parent {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+#reviews .profilePic {
+  position: relative;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+}
+#reviews .star {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: -30px;
+  left: 30px;
+}
+
+#reviews .miniMode {
+  display: none;
+}
+
+#reviews .zgtPlaceSheetBottom {
+  margin-top: 20px;
+}
+
+@media (min-width: 960px) {
+  #reviews .zgtPlaceSheetBox {
+      padding: 0 40px 40px 
+ }
+  #reviews .zgtPlaceSheetBottom {
+      margin-top: 40px;
+ }
+  #reviews .zgtPlaceSheetSectionTitle {
+      padding-top: 32px;
+ }
+}
+@media (min-width: 600px) {
+  #reviews .zgtGoogleReviewsTitle {
+      margin-right: 32px;
+ }
+  #reviews .zgtGoogleReviewContainer {
+      border-bottom:1px #d0d2d3 solid;
+      padding:24px 0 27px;
+ }
+  #reviews .boxOne {
+   min-width: 150px;
+  }
+}
+@media (max-width: 599px) {
+  #reviews .boxTwo {
+      display: none;
+  }    
+  #reviews .zgtGoogleReviewContainer {
+    flex-wrap: wrap;
+    padding: 0;
+    padding-top: 5px;
+    border-bottom: 0;
+  }
+  #reviews .zgtGoogleReviewsHeaderContainer {
+    padding-bottom: 25px;
+  }
+  #reviews .profilePic {
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+  }
+  #reviews .star {
+    width: 15px;
+    height: 15px;
+    top: 2px;
+    left: 8px;
+  }
+  #reviews .miniMode {
+    display: inline;
+  }
+  #reviews .miniDetails {
+    vertical-align: top;
+    color: #656666;
+    font: 15px/24px 'Calibre-Regular';
+    letter-spacing: .013em;
+    -webkit-font-smoothing: antialiased;
+    position:relative;
+    top:-6px;
+  }
+  #reviews .zgtGoogleReviewsData {
+    display: block;
+    padding-top: 10px;
+  }
+}
