@@ -20,10 +20,11 @@ export default class Reviews extends React.Component {
    * Get and set data before mounting component
    */
   componentWillMount() {
-    if (window.location.pathname === '/') {
-      window.location.pathname = '/1';
+    let id = window.location.pathname;
+    if (id === '/') {
+      id = '/1';
     }
-    this.getRestaurant(window.location.pathname).then(this.setData);
+    this.getRestaurant(id).then(this.setData);
   }
 
   /**
