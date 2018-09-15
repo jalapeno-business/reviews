@@ -8,7 +8,7 @@ const generateReviews = (num) => {
     reviews.push({
       name: `${faker.name.firstName()} ${faker.name.lastName().slice(0, 1)}.`,
       date: faker.date.between('2012-01-01', '2015-12-31'),
-      text: faker.lorem.paragraph(),
+      text: faker.lorem.sentences(10),
       profilePic: 'https://placeimg.com/72/72/people',
       star: faker.random.boolean(),
       numOfStars: faker.random.number({ min: 1, max: 4 }),
