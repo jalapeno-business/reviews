@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Moment from 'moment';
 import styles from './reviews.styles.css';
+import ReviewText from './reviewText';
 
 
 const Review = (props) => {
@@ -11,7 +12,7 @@ const Review = (props) => {
   return (
     <div className={styles.zgtGoogleReviewContainer}>
       <div className={styles.miniMode}>
-        <p>{`${'★'.repeat(numOfStars)} ${text}`}</p>
+        <ReviewText stars={'★'.repeat(numOfStars)} text={text} />
       </div>
 
       <div className={styles.boxOne}>
@@ -25,7 +26,7 @@ const Review = (props) => {
         <span>
           <p>{name}</p>
           <p className={styles.detailText}>{new Moment(date).format('MMMM D, Y')}</p>
-          <p>{`${'★'.repeat(numOfStars)} ${text}`}</p>
+          <ReviewText stars={'★'.repeat(numOfStars)} text={text} />
         </span>
       </div>
 
