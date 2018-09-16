@@ -25,7 +25,8 @@
     "test": "jest --forceExit"
   },
   "pre-commit": [
-    "pretest"
+    "pretest",
+    "test"
   ],
   "dependencies": {
     "axios": "^0.18.0",
