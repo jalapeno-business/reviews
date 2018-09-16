@@ -23,7 +23,9 @@ export default class ReviewText extends React.Component {
     const { text, stars } = this.props;
     const { shortMode } = this.state;
     const maxLength = 200;
-    if (shortMode) {
+    if (text.length <= maxLength) {
+      return { text };
+    } if (shortMode) {
       return (
         <div
           className={styles.reviewText}
