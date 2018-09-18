@@ -3,8 +3,8 @@
 
 import Reviews from './reviews';
 
-window.ReviewsComponent = Reviews;
+window.Reviews = Reviews;
 
-// ReactDOM.render(<Reviews />, document.getElementById('reviews'));
+// ReactDOM.render(<Reviews />, document.getElementById('Reviews'));
 
 module.hot.accept();
