@@ -6,7 +6,7 @@ import Review from './review';
 export default class Reviews extends React.Component {
   constructor(props) {
     super(props);
-    this.server = 'localhost:8080'; // address of the API server
+    this.server = '/api/restaurant/reviews'; // address of the API server
     this.state = {
       overallStars: null, // overall score of a restaurant
       reviews: [], // all the reviews of a restaurant
@@ -44,7 +44,7 @@ export default class Reviews extends React.Component {
    * @param {*} id ID of the restaurant
    */
   getRestaurant(id) {
-    return axios.get(`http://${this.server}/api/restaurant${id}`);
+    return axios.get(`${this.server}${id}`);
   }
 
   render() {

@@ -28,6 +28,6 @@ const getRestaurant = (req, res) => {
 };
 
 // Routes
-app.get('/api/restaurant/:id', getRestaurant);
+app.get('/api/restaurant/reviews/:id', getRestaurant);
 
 module.exports = app;
