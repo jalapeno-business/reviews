@@ -90,7 +90,7 @@
 }
 
 #reviews .zgtPlaceSheetBottom {
-  margin-top: 20px;
+  padding-top: 20px;
 }
 
 @media (min-width: 960px) {
@@ -98,7 +98,7 @@
       padding: 0 40px 40px 
  }
   #reviews .zgtPlaceSheetBottom {
-      margin-top: 40px;
+      padding-top: 40px;
  }
   #reviews .zgtPlaceSheetSectionTitle {
       padding-top: 32px;
