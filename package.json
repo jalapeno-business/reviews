@@ -19,7 +19,8 @@
   "scripts": {
     "react-dev": "webpack-dev-server --config ./webpack.config.js --mode development",
     "dev-server": "nodemon ./server/server.js",
-    "start": "webpack -p --config ./webpack.config.js & nodemon ./server/server.js",
+    "webpack-prod": "webpack -p --config ./webpack.config.js",
+    "start": "node ./server/server.js",
     "pretest": "eslint --ignore-path .gitignore .",
     "seed": "node ./seed_data/generator.js & node ./seed_data/seedDb.js",
     "test": "jest --forceExit"
