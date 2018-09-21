@@ -5,6 +5,6 @@ import Reviews from './reviews';
 
 // window.Reviews = Reviews;
 
-ReactDOM.render(<Reviews />, document.getElementById('Reviews'));
+ReactDOM.render(<Reviews />, document.getElementById('zagat-reviews'));
 
 module.hot.accept();
