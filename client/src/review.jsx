@@ -18,7 +18,7 @@ const Review = (props) => {
       <div className={styles.boxOne}>
         <span className={styles.parent}>
           <img className={styles.profilePic} alt="profile pic" src={profilePic} />
-          {star ? <img className={styles.star} alt="profile pic" src="https://vignette.wikia.nocookie.net/justdance/images/2/2e/Star.png" /> : ''}
+          {star ? <img className={styles.star} alt="profile pic" src="https://s3.us-east-2.amazonaws.com/fec-zagat/Star-min.png" /> : ''}
         </span>
       </div>
 

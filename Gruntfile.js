@@ -9,7 +9,7 @@ module.exports = (grunt) => {
           'webpack-prod',
         ],
       },
-      s3: {
+      s3Reviews: {
         cmd: 'aws',
         args: [
           's3',
@@ -20,9 +20,22 @@ module.exports = (grunt) => {
           'read=uri=http://acs.amazonaws.com/groups/global/AllUsers',
         ],
       },
+      s3ReviewsGzip: {
+        cmd: 'aws',
+        args: [
+          's3',
+          'cp',
+          './client/dist/reviews.js.gz',
+          's3://fec-zagat/reviews.js',
+          '--metadata',
+          '{"Content-Encoding":"gzip"}',
+          '--grants',
+          'read=uri=http://acs.amazonaws.com/groups/global/AllUsers',
+        ],
+      },
     },
   });
   grunt.registerTask('build', ['run:webpack']);
   grunt.registerTask('deploy', ['run:s3']);
-  grunt.registerTask('build-deploy', ['run:webpack', 'run:s3']);
+  grunt.registerTask('build-deploy', ['run:webpack', 'run:s3ReviewsGzip']);
 };
