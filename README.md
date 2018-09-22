@@ -7,7 +7,8 @@
 - https://github.com/jalapeno-business/reviews
 - https://github.com/jalapeno-business/carousel
 - https://github.com/jalapeno-business/rec-public.git
-- https://github.com/jalapeno-business/restaurant-info
+- https://github.com/jalapeno-business/info2
+- https://github.com/jalapeno-business/suggestions
 
 ## Table of Contents
 
@@ -17,22 +18,22 @@
 
 ## Usage
 
-> Some usage instructions
+> Install dependencies using npm install. Then create a bundle with webpack and start the express server.
+- npm install
+- npm webpack-prod
+- npm start
 
 ## Requirements
 
 An `nvmrc` file is included if using [nvm](https://github.com/creationix/nvm).
 
-- Node 6.13.0
-- etc
+- Node 8.11.3
+- npm
 
 ## Development
 
 ### Installing Dependencies
-
-From within the root directory:
-
+A package.json is provided. From within the root directory:
 ```sh
-npm install -g webpack
 npm install
 ```
