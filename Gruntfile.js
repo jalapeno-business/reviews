@@ -27,8 +27,6 @@ module.exports = (grunt) => {
           'cp',
           './client/dist/reviews.js.gz',
           's3://fec-zagat/reviews.js',
-          '--metadata',
-          '{"Content-Encoding":"gzip"}',
           '--grants',
           'read=uri=http://acs.amazonaws.com/groups/global/AllUsers',
         ],
