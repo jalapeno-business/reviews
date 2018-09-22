@@ -39,7 +39,7 @@
 }
 #reviews .sectionHeading{
   color:#656666;
-  font:16px/24px 'Calibre-Semibold';
+  font-weight: 600;
   letter-spacing:.086em;
   text-transform:uppercase;
 }
