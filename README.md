@@ -1,4 +1,4 @@
-# Jalapeño Business
+# Jalapeño Business Reviews Component
 
 > Replica of Zagat
 
@@ -27,8 +27,8 @@
 
 An `nvmrc` file is included if using [nvm](https://github.com/creationix/nvm).
 
-- Node 8.11.3
-- npm
+- Node 8
+- npm 6
 
 ## Development
 
